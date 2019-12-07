@@ -20,7 +20,11 @@ public class DemoLoader implements CommandLineRunner{
 
     @Override 
     public void run (String ...strings) throws Exception {
+        // passes the new contact to the DB
         this.repository.save(new Contact("Joe", "Wags", "Joe@Wags.com"));
+        this.repository.save(new Contact("Sam", "Smith", "Sam@Smith.com"));
+        this.repository.save(new Contact("Jan", "Blake", "Jan@Blake.com"));
+
     }
 
 }
